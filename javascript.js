@@ -13,3 +13,9 @@ Book.prototype.info = function () {
     `${this.title} by ${this.author}, ${this.pages} pages, ${readStr}`
   )
 }
+
+/* Manually add books to test the code */
+myLibrary.push(new Book('The Hobbit', 'J.R.R. Tolkien', 295, false))
+myLibrary.push(new Book('The Coolest Book', 'Oscar Robertson', 300, true))
+
+console.log(myLibrary)
