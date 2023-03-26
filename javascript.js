@@ -15,8 +15,11 @@ Book.prototype.info = function () {
 }
 
 function displayBooks () {
+  const previousBookCards = document.getElementById('bookCards')
+  if (previousBookCards) previousBookCards.remove()
+
   const bookCards = document.createElement('div')
-  bookCards.classList.add('book-cards')
+  bookCards.id = 'bookCards'
 
   for (const book of myLibrary) {
     const bookCard = document.createElement('div')
