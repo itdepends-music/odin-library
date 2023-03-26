@@ -48,10 +48,26 @@ function displayBooks () {
 
 const newBookButton = document.getElementById('newBookButton')
 const newBookForm = document.getElementById('newBookForm')
+const newBookSubmit = document.getElementById('newBookSubmit')
 
 newBookButton.addEventListener('click', () =>
   newBookForm.classList.remove('hidden')
 )
+
+function addBookHandler (e) {
+  e.preventDefault()
+
+  const title = document.getElementById('title').value
+  const author = document.getElementById('author').value
+  const pages = Number(document.getElementById('pages').value)
+  const read = document.getElementById('read').checked
+
+  const book = new Book(title, author, pages, read)
+  myLibrary.push(book)
+  displayBooks()
+}
+
+newBookSubmit.addEventListener('click', addBookHandler)
 
 /* Manually add books to test the code */
 myLibrary.push(new Book('The Hobbit', 'J.R.R. Tolkien', 295, false))
