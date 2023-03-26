@@ -40,11 +40,18 @@ function displayBooks () {
     bookCard.appendChild(readElem)
   }
 
-  document.body.insertBefore(bookCards, document.getElementById('newBook'))
+  document.body.insertBefore(
+    bookCards,
+    document.getElementById('newBookButton')
+  )
 }
 
 const newBookButton = document.getElementById('newBookButton')
 const newBookForm = document.getElementById('newBookForm')
+
+newBookButton.addEventListener('click', () =>
+  newBookForm.classList.remove('hidden')
+)
 
 /* Manually add books to test the code */
 myLibrary.push(new Book('The Hobbit', 'J.R.R. Tolkien', 295, false))
