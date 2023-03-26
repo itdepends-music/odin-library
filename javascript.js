@@ -40,7 +40,7 @@ function displayBooks () {
     bookCard.appendChild(readElem)
   }
 
-  document.body.appendChild(bookCards)
+  document.body.insertBefore(bookCards, document.getElementById('newBook'))
 }
 
 /* Manually add books to test the code */
