@@ -68,6 +68,8 @@ function addBookHandler (e) {
   const book = new Book(title, author, pages, read)
   myLibrary.push(book)
   displayBooks()
+
+  newBookForm.classList.add('hidden')
 }
 
 newBookSubmit.addEventListener('click', addBookHandler)
