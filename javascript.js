@@ -44,6 +44,12 @@ function displayBooks () {
     const readElem = document.createElement('p')
     readElem.textContent = book.read ? 'Read' : 'Not Read'
     bookCard.appendChild(readElem)
+
+    const deleteButton = document.createElement('button')
+    deleteButton.textContent = 'Delete'
+    deleteButton.dataset.id = i
+    deleteButton.classList.add('bookDeleteButton')
+    bookCard.appendChild(deleteButton)
   }
 
   document.body.insertBefore(
