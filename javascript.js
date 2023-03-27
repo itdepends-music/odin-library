@@ -21,9 +21,12 @@ function displayBooks () {
   const bookCards = document.createElement('div')
   bookCards.id = 'bookCards'
 
-  for (const book of myLibrary) {
+  for (let i = 0; i < myLibrary.length; i++) {
+    const book = myLibrary[i]
+
     const bookCard = document.createElement('div')
     bookCard.classList.add('book-card')
+    bookCard.dataset.id = i
     bookCards.appendChild(bookCard)
 
     const titleElem = document.createElement('h3')
