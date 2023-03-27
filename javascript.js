@@ -80,7 +80,6 @@ function addBookHandler (e) {
 
   newBookForm.classList.add('hidden')
 }
-
 newBookSubmit.addEventListener('click', addBookHandler)
 
 /* Manually add books to test the code */
