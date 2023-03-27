@@ -48,7 +48,7 @@ function displayBooks () {
     const deleteButton = document.createElement('button')
     deleteButton.textContent = 'Delete'
     deleteButton.dataset.id = i
-    deleteButton.classList.add('bookDeleteButton')
+    deleteButton.classList.add('book-delete-button')
     bookCard.appendChild(deleteButton)
   }
 
@@ -56,6 +56,21 @@ function displayBooks () {
     bookCards,
     document.getElementById('newBookButton')
   )
+
+  addDeleteHandlers()
+}
+
+function addDeleteHandlers () {
+  const deleteButtons = document.getElementsByClassName('book-delete-button')
+  Array.from(deleteButtons).forEach(deleteButton =>
+    deleteButton.addEventListener('click', deleteButtonHandler)
+  )
+}
+
+function deleteButtonHandler (e) {
+  const index = e.target.dataset.id
+  myLibrary.splice(index, 1)
+  displayBooks()
 }
 
 const newBookButton = document.getElementById('newBookButton')
