@@ -101,5 +101,4 @@ newBookSubmit.addEventListener('click', addBookHandler)
 myLibrary.push(new Book('The Hobbit', 'J.R.R. Tolkien', 295, false))
 myLibrary.push(new Book('The Coolest Book', 'Oscar Robertson', 300, true))
 
-console.log(myLibrary)
 displayBooks()
