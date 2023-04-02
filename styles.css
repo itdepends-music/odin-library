@@ -32,3 +32,7 @@ h1 {
   border-radius: 5px;
   text-align: center;
 }
+
+.book-card p {
+  margin: 4px;
+}
