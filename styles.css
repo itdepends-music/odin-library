@@ -1,3 +1,21 @@
 .hidden {
   display: none;
 }
+
+body {
+  background-color: #303446;
+}
+
+* {
+  color: #c6d0f5;
+}
+
+h1 {
+  text-align: center;
+  color: #b5bfe2;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 2px solid #c6d0f5;
+}
