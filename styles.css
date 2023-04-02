@@ -36,3 +36,14 @@ h1 {
 .book-card p {
   margin: 4px;
 }
+
+.book-card button {
+  border: 1px solid #e78284;
+  border-radius: 3px;
+  background-color: #303446;
+  color: #e78284;
+  padding: 3px 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
