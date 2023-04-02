@@ -19,3 +19,16 @@ h1 {
   padding: 10px;
   border-bottom: 2px solid #c6d0f5;
 }
+
+#bookCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 30px;
+  padding: 30px;
+}
+
+.book-card {
+  border: 1px solid #c6d0f5;
+  border-radius: 5px;
+  text-align: center;
+}
