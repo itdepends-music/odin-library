@@ -70,3 +70,17 @@ h1 {
   background-color: #232634;
   cursor: pointer;
 }
+
+form {
+  background-color: #232634;
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+form h2 {
+  grid-column-end: span 2;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
