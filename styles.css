@@ -76,10 +76,17 @@ form button {
 }
 
 form {
-  background-color: #232634;
-  padding-bottom: 32px;
+  padding: 16px 32px;
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-gap: 8px;
+  align-items: center;
+}
+
+.form-wrapper {
+  background-color: #232634;
+  display: flex;
+  justify-content: center;
 }
 
 form h2 {
@@ -93,6 +100,23 @@ form button {
   grid-column-end: span 2;
   width: fit-content;
   display: flex;
-  justify-self: end;
+  justify-self: center;
   padding: 5px 8px;
+}
+
+form label {
+  justify-self: end;
+}
+
+form input[type='text'] {
+  width: 400px;
+}
+
+form .read-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input[type='checkbox'] {
+  width: 16px;
 }
