@@ -7,13 +7,6 @@ function Book (title, author, pages, read) {
   this.read = read
 }
 
-// Book.prototype.info = function () {
-//   const readStr = this.read ? 'has read' : 'not read yet'
-//   console.log(
-//     `${this.title} by ${this.author}, ${this.pages} pages, ${readStr}`
-//   )
-// }
-
 function displayBooks () {
   const previousBookCards = document.getElementById('bookCards')
   if (previousBookCards) previousBookCards.remove()
@@ -93,9 +86,5 @@ function addBookHandler (e) {
   newBookForm.classList.add('hidden')
 }
 newBookSubmit.addEventListener('click', addBookHandler)
-
-/* Manually add books to test the code */
-myLibrary.push(new Book('The Hobbit', 'J.R.R. Tolkien', 295, false))
-myLibrary.push(new Book('The Coolest Book', 'Oscar Robertson', 300, true))
 
 displayBooks()
