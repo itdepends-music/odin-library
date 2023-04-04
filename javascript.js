@@ -52,10 +52,7 @@ function displayBooks () {
     bookCard.appendChild(deleteButton)
   }
 
-  document.body.insertBefore(
-    bookCards,
-    document.getElementById('newBookButton')
-  )
+  document.body.insertBefore(bookCards, document.getElementById('newBookForm'))
 
   addDeleteHandlers()
 }
