@@ -101,7 +101,7 @@ form button {
   width: fit-content;
   display: flex;
   justify-self: center;
-  padding: 5px 8px;
+  padding: 2px 5px;
 }
 
 form label {
@@ -110,6 +110,11 @@ form label {
 
 form input[type='text'] {
   width: 400px;
+  outline: none;
+  border: 1px solid #c6d0f5;
+  border-radius: 3px;
+  background-color: #232634;
+  padding: 3px 5px;
 }
 
 form .read-row {
