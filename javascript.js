@@ -79,6 +79,11 @@ newBookButton.addEventListener("click", () =>
 function addBookHandler(e) {
   e.preventDefault();
 
+  if (!newBookForm.checkValidity()) {
+    newBookForm.reportValidity();
+    return;
+  }
+
   const title = document.getElementById("title").value;
   const author = document.getElementById("author").value;
   const pages = Number(document.getElementById("pages").value);
@@ -90,6 +95,7 @@ function addBookHandler(e) {
 
   newBookForm.classList.add("hidden");
 }
+
 newBookSubmit.addEventListener("click", addBookHandler);
 
 displayBooks();
