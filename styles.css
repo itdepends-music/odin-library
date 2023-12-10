@@ -109,7 +109,8 @@ form label {
   justify-self: end;
 }
 
-form input[type='text'] {
+form input[type='text'],
+form input[type='number'] {
   width: 400px;
   outline: none;
   border: 1px solid #c6d0f5;
