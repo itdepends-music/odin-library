@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
 }
 
 * {
@@ -124,4 +125,9 @@ form .read-row {
 
 form input[type='checkbox'] {
   width: 16px;
+  accent-color: #c6d0f5;
+}
+
+button {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
 }
